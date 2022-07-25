@@ -171,7 +171,7 @@ public class PasswordMaker {
     private static String randomCapitalization(String s){
         String capitalizedPassword="";
         //minimum 1 capital letter, maximum all but one
-        int max = s.length()-1;
+        int max = s.length();
         int min =1;
         int times = (int) ((Math.random() * (max - min)) + min);
         ArrayList<Integer> makeCapital = new ArrayList<>();
